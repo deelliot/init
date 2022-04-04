@@ -1,0 +1,5 @@
+ifcongif -l | tr ' ' '\n'
+
+ifcongif:configures network interface parameters
+-l:address family - lists all available interfaces with no other info
+tr: translates characters - to replace the space between to newlines
