@@ -1,0 +1,5 @@
+networksetup -listallhardwareports
+
+en1 = wifi port
+
+ifconfig en1 | grep ether | cut -c  7-24
