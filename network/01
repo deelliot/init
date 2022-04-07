@@ -1,4 +1,4 @@
-ifcongif -l | tr ' ' '\n'
+ifconfig -l | tr ' ' '\n'
 
 ifcongif:configures network interface parameters
 -l:address family - lists all available interfaces with no other info
