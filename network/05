@@ -1,0 +1,11 @@
+#!/bin/bash/
+
+#05: Identify the IP address of the DNS that responds to the url: who.int
+
+#DNS = domain name system
+dig who.int | awk '/ANSWER SECTION/{getline;print $5}'
+
+#dig = DNS lookup utility
+#awk searches for "answer section" the getline reads the next line
+# alternative is: nslookup who.int | awk '/Name/{getline; print $2}'
+#alternative: host who.int | awk 'NR==1 {print $4}'

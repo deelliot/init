@@ -1,1 +1,8 @@
-netstat -i -Ien0
+#!/bin/bash/
+
+#03: Identify the MAC address of the Wi-Fi card
+# networksetup -listallhardwareports
+
+# en1 = wifi port
+
+ifconfig en1 | grep ether | awk '{print $2}'

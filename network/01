@@ -1,5 +1,6 @@
-ifconfig -l | tr ' ' '\n'
+#!/bin/bash/
 
-ifcongif:configures network interface parameters
--l:address family - lists all available interfaces with no other info
-tr: translates characters - to replace the space between to newlines
+#01: Get the list of the network interfaces of the machine without displaying
+# any detail for these interfaces. Only the list of names.
+
+ifconfig -l | tr ' ' '\n'

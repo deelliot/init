@@ -1,5 +1,9 @@
-networksetup -listallhardwareports
+#!/bin/bash/
 
-en1 = wifi port
+#04: Identifiy the default gateway in the routing table
 
-ifconfig en1 | grep ether | cut -c  7-24
+netstat -rn | grep 'default' -m1
+
+#netstat displays network related information
+# -r shows the routing tables
+# -n shows the network addresses as numbers instead of symbolically
