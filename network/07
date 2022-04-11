@@ -1,3 +1,8 @@
 #!/bin/bash/
 
 #07 Query an external DNS server on the who.int domain name(ie.: google 8.8.8.8)
+
+nslookup who.int 8.8.8.8
+
+#nslookup is a program to query Internet domain name servers.
+#syntax: nslookup [-option] [name | -] [server]

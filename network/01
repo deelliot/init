@@ -4,3 +4,7 @@
 # any detail for these interfaces. Only the list of names.
 
 ifconfig -l | tr ' ' '\n'
+
+# ifconfig: network interface configurator
+# -l: list all available interfaces
+# tr - replace spaces with newlines

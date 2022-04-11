@@ -3,3 +3,14 @@
 #06: Get the complete path of the file that contains the IP address
 #of the DNS server you’re using
 #RED
+
+cat /etc/resolv.conf
+
+# resolv.conf is a configuration file that contains keywords/operational
+# parameters used to set the systems DNS resolver.
+
+# the DNS resolver is used by applications on the operating system to
+# translates domain names (eg www.google.com) into IP addresses
+
+# /etc is a directory that contains system wide configurations files and system
+# databases (editable text configurations)
