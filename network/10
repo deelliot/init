@@ -1,3 +1,8 @@
 #!/bin/bash/
 
 #10: Identify the network devices between your computer and the who.int domain
+
+traceroute who.int
+
+#traceroute prints the route a packet take through devices to get from the
+#traceroute to the final destination(the network host), hop-by-hop

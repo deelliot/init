@@ -3,4 +3,9 @@
 #11:Use the output of the previous command to find the name and IP address
 # of the device that makes the link between you (local network) and the
 # outside world
-# RED
+
+nat (10.60.1.1)
+
+#column 1 = hop number (time to live value)
+#column 2 = host name an IP address of the responding system
+#column 3 - 5 = round-trip time for an attempt to reach destination + TTL values

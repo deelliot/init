@@ -6,3 +6,5 @@
 # en1 = wifi port
 
 ifconfig en1 | grep ether | awk '{print $2}'
+
+#alternative: networksetup -getmacaddress en1 | awk '{print $3}'

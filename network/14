@@ -1,4 +1,6 @@
-#!/bin/bash/
-
 #14: What file contains the local DNS entries?
-# RED
+
+/etc/hosts
+
+#host file is an operating system file that maps hostnames to IP addresses.
+#it contains IP addresses separated by a space and then a domain name
