@@ -6,3 +6,9 @@ nslookup who.int 8.8.8.8
 
 #nslookup is a program to query Internet domain name servers.
 #syntax: nslookup [-option] [name | -] [server]
+
+#src: https://www.site24x7.com/learn/external-dns.html
+
+# An external DNS is a publicly accessible third-party domain name server
+# that's generally open for anyone on the internet to access and update.
+# External DNS allows you to query for the IP address of a domain.

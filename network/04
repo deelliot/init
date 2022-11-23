@@ -7,3 +7,14 @@ netstat -rn | grep 'default' -m1 | awk '{print $2}'
 #netstat displays network related information
 # -r shows the routing tables
 # -n shows the network addresses as numbers instead of symbolically
+
+# A default gateway makes it possible for devices in one network to
+# communicate with devices in another network. If a computer,
+# for example, requests a web page, the request goes through
+# the default gateway before exiting the local network (LAN) to reach the internet.
+
+# Think of a default gateway as an intermediate device between the local
+#  network and the internet. The default gateway transfers internal data
+#  to the internet and back again.
+
+# src: https://www.lifewire.com/what-is-a-default-gateway-817771

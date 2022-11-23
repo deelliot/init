@@ -8,3 +8,14 @@ ifconfig -l | tr ' ' '\n'
 # ifconfig: network interface configurator
 # -l: list all available interfaces
 # tr - replace spaces with newlines
+
+# Network Interface: A network interface can refer to any kind of software
+# interface to networking hardware. For instance, if you have two network cards
+# in your computer, you can control and configure each network interface
+# associated with them individually.
+# A network interface may be associated with a physical device,
+# or it may be a representation of a virtual interface.
+# The “loopback” device, which is a virtual interface available in most Linux
+# environments to connect back to the same machine, is an example of this.
+
+#src: https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols

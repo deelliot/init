@@ -1,4 +1,16 @@
 #!/bin/bash/
 
 #b:  Identify all IP adresses which are part of the same subnet
-arp -a | awk '{print $2}'
+
+arp -ai en0 | awk '{print $2}'
+
+#arp = address resolution display and control
+
+# a subnet is a network inside a network.
+
+#  Every device that connects to the Internet is assigned a unique IP
+#  (Internet Protocol) address, enabling data sent over the Internet to
+#  reach the right device out of the billions of devices connected to the
+#  Internet.
+
+#src: https://www.cloudflare.com/learning/network-layer/what-is-a-subnet/

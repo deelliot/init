@@ -6,6 +6,8 @@
 
 nat (10.60.1.1)
 
+#nat = network address translation
+
 #column 1 = hop number (time to live value)
 #column 2 = host name an IP address of the responding system
 #column 3 - 5 = round-trip time for an attempt to reach destination + TTL values

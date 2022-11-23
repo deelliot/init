@@ -8,3 +8,9 @@
 ifconfig en1 | grep ether | awk '{print $2}'
 
 #alternative: networksetup -getmacaddress en1 | awk '{print $3}'
+
+# The MAC address is a hardware identifier that uniquely identifies
+# each device on a network. If the device, for example a laptop,
+# has both a wired (Ethernet) and wireless (Wi-Fi address)
+# connection then there will be one wired MAC address for the wired connection,
+# and a second wireless MAC for the wireless connection.

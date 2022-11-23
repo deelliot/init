@@ -1,11 +1,10 @@
-#!/bin/bash/
+
 
 #09: Find the external IP of 42.fr
-# GREEN
 
-# 163.172.250.16
+163.172.250.16
 
-nslookup 42.fr | awk '/Name/{getline; print $2}'
+# nslookup 42.fr | awk '/Name/{getline; print $2}'
 
 #internal/local IPs are assigned by your router, & used to identify
 #the various devices connected to it. These can change
