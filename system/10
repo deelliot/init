@@ -1,3 +1,9 @@
 #!/bin/bash/
 
 #Name the command that lists the partition tables of drives?
+
+lsblk
+
+#srcs: https://www.binarytides.com/linux-command-check-disk-partitions/
+
+#lsblk list block devices

@@ -1,4 +1,9 @@
 #!/bin/bash/
 
 #Name the command that displays the available space left and used on the system
-#in an humanly understandable way
+#in n humanly understandable way
+
+df -h
+
+#df report file system disk space usage
+# -h human readable

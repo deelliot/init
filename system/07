@@ -1,3 +1,8 @@
 #!/bin/bash/
 
-#Find the command that kills the background command’s process
+#Figure out the PID of the SSHD service.
+
+cat /var/run/sshd.pid
+
+#process ID
+#src: https://www.ibm.com/docs/en/z-system-automation/4.1.0?topic=automation-example-sshd

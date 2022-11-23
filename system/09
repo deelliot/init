@@ -1,3 +1,8 @@
 #!/bin/bash/
 
 #What command lets you know who is connected to the System?
+
+who
+
+#alternatively w
+#src https://www.thegeekstuff.com/2009/03/4-ways-to-identify-who-is-logged-in-on-your-linux-system/

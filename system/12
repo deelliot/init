@@ -1,3 +1,11 @@
 #!/bin/bash/
 
-#Figure out the exact size of each folder of /var in a humanly understandable way followed by the path of it.
+sudo du -sh /var
+
+#Figure out the exact size of each folder of /var in a humanly understandable
+# way followed by the path of it.
+
+#du : estimate file space usage
+# -sh : summarised, human readable
+
+#src: https://linuxize.com/post/how-get-size-of-file-directory-linux/

@@ -1,3 +1,7 @@
 #!/bin/bash/
 
 #Name the command that reboots the SSH service.
+
+sudo service ssh restart
+
+src: https://www.cyberciti.biz/faq/howto-restart-ssh/
