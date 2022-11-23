@@ -1,3 +1,7 @@
 #!/bin/bash/
 
+sudo tail -f /var/log/syslog &
+
 # Run the ‘tail -f /var/log/syslog‘ command in background
+# & sign forces process to run in the background
+#src: https://www.tecmint.com/run-linux-command-process-in-background-detach-process/

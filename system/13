@@ -4,4 +4,6 @@
 
 top
 
+# alternatively ps -aux
+
 # top - displays linux processes

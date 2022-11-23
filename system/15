@@ -1,3 +1,9 @@
 #!/bin/bash/
 
+sudo kill $pid
+
 #Find the command that kills the background command’s process
+
+#https://www.cyberciti.biz/faq/how-to-check-running-process-in-linux-using-command-line/
+
+#$pid - insert pid number

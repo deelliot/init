@@ -1,3 +1,6 @@
 #!/bin/bash/
 
-#Find the command that allows you to connect via ssh on the VM. (In parallel with the graphic session)
+#Find the command that allows you to connect via ssh on the VM.
+# (In parallel with the graphic session)
+
+ssh user@IP_ADDRESS
