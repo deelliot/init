@@ -1,0 +1,28 @@
+#!/bin/bash/
+
+#Write a script which delete an ACTIVE user on the VM.
+
+awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd
+
+echo -e "Enter username to be deleted:"
+read username
+
+userlist=$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | grep "$username")
+
+if [ "$userlist" != NULL ]
+	then
+		sudo killall -u $userlist
+		sudo userdel $userlist
+		echo -e "$username deleted."
+else
+	echo "user does not exist"
+fi
+
+#echo -e enables interpretation of backslash escapes
+#read - reads input and saves it into variable "username"
+#checks if the input matches a current active user
+
+#sudo killall - kills all processes run by the user
+# -u deletes processes using the username not the PID
+#sudo userdel - delete user
+

@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: deelliot <deelliot@student.hive.fi>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/24 15:03:44 by deelliot          #+#    #+#              #
+#    Updated: 2022/11/24 15:31:58 by deelliot         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash/
+
+#Three’s a Charm. Write a script of you choice.
+
+# shell script to gitignore changes to line 9 in the 42 header file, in all *c and *h files.
+
+
+#!/bin/bash
+#
+# This hook will look for code comments marked '//no-commit'
+#    - case-insensitive
+#    - dash is optional
+#    - there may be a space after the //
+#
+noCommitCount=$(git diff --no-ext-diff --cached | egrep -i --count "(@No|\/\/\s?no[ -]?)commit")
+if [ "$noCommitCount" -ne "0" ]; then
+   echo "WARNING: You are attempting to commit changes which include a 'no-commit'."
+   echo "Please check the following files:"
+   git diff --no-ext-diff --cached --name-only -i -G"(@no|\/\/s?no-?)commit" | sed 's/^/   - /'
+   echo
+   echo "You can ignore this warning by running the commit command with '--no-verify'"
+   exit 1
+fi

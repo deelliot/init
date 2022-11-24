@@ -1,0 +1,11 @@
+#!/bin/bash/
+
+# Write a script which displays only the login, UID and Path of each entry of
+# the /etc/passwd file.
+
+cat /etc/passwd | cut -d: -f1,3,7
+
+#cat = concatenate files to standard output
+#cut = remove sections from each line of a file
+# -d = delimiter
+# -f = fields - select only these fields
