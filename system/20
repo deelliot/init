@@ -1,3 +1,14 @@
 #!/bin/bash/
 
 #List all existing users on the VM
+
+cat /etc/passwd
+
+#to list only the usernames : awk -F':' '{ print $1}' /etc/passwd
+
+#alternatively compgen --u
+
+#src: https://www.cyberciti.biz/faq/linux-list-users-command/
+
+# The /etc/passwd file stores essential information required during login.
+# In other words, it stores user account information.

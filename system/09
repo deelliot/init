@@ -2,7 +2,8 @@
 
 #What command lets you know who is connected to the System?
 
-who
+whoami
 
 #alternatively w
+#alternatively who
 #src https://www.thegeekstuff.com/2009/03/4-ways-to-identify-who-is-logged-in-on-your-linux-system/

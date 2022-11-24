@@ -6,5 +6,6 @@
 cron
 
 #daemon to execute scheduled commands
+#once set up, cron starts automatically from /etc/init.d
 
 #src: https://www.makeuseof.com/tag/linux-task-scheduling-crontab-explained/

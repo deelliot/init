@@ -1,3 +1,9 @@
 #!/bin/bash/
 
-#List all services which are started at boot time and name this kind of services
+#List all services which are started at boot time and names this kind of services
+
+systemctl --type=service
+
+#src https://ostechnix.com/how-to-list-startup-services-at-boot-in-linux/
+
+#these start up services are also known as daemons

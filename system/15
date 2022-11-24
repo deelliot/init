@@ -6,4 +6,4 @@ sudo kill $pid
 
 #https://www.cyberciti.biz/faq/how-to-check-running-process-in-linux-using-command-line/
 
-#$pid - insert pid number
+#$pid - process id number given when program is run. (can find with jobs -l)

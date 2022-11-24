@@ -5,3 +5,5 @@
 ~/.ssh/authorized_keys
 
 # src: https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys
+
+# https://attack.mitre.org/techniques/T1098/004/

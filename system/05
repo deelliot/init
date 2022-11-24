@@ -4,4 +4,6 @@
 
 sudo service ssh status
 
+#alternatively: sudo systemctl status ssh
+
 #src: https://linuxhint.com/check-if-ssh-is-running-on-linux/
