@@ -5,6 +5,7 @@
 arp -ai en0 | awk '{print $2}'
 
 #arp = address resolution display and control
+#ai - displays all current interfaces
 
 # a subnet is a network inside a network.
 

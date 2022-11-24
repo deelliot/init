@@ -6,7 +6,7 @@
 
 # find the IP address of who.int with answer in 05:
 
-ip_address=$(nslookup who.int | awk '/Name/{getline; print $2}')
+ip_address=$(host who.int | grep address | cut -d ' ' -f4)
 
 # use IP address with
 whois $ip_address | grep 'OrgName:'| awk '/OrgName/{print $2 $3}'

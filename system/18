@@ -4,6 +4,5 @@
 
 sudo service ssh stop
 
-#srcs: https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/
-
 #to stop the ssh indefinitely: sudo systemctl disable ssh
+#srcs: https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/

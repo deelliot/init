@@ -1,6 +1,4 @@
-#!/bin/bash/
-
 #Explain how connect yourself as new user. (With graphic session and ssh session)
 
-#log out of current session with current user, and login with new user details.
-# then use answer from question 17, aka. ssh username@ipaddress
+graphics session: launch VirtualBox, launch debian, and login with new user details
+ssh session: ssh username@hostname

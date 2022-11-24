@@ -2,4 +2,6 @@
 
 #What command can you use to rename your system?
 
-hostnamectl set-hostname [name_of_your_choice]
+sudo hostname newname
+
+#alternatively: hostnamectl set-hostname [name_of_your_choice]

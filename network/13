@@ -1,12 +1,10 @@
-#!/bin/bash/
-
-#13: Thanks to the previous question and the reverse DNS
-#find the name of your host
-
+13: Thanks to the previous question and the reverse DNS
+find the name of your host
+	
 c1r6p2.hive.fi
 
-#use the host command which performs DNS lookups. If it is given an IPv4/IPv6
-#address it automatically performs a reverse lookup for that address.
+use the host command which performs DNS lookups. If it is given an IPv4/IPv6
+address it automatically performs a reverse lookup for that address.
 
-# local_ip=$(ifconfig en0 | awk '/inet/{getline; print $2}')
-# host $local_ip | awk '{print $5}'
+local_ip=$(ifconfig en0 | awk '/inet/{getline; print $2}')
+host $local_ip | awk '{print $5}'

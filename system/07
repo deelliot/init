@@ -4,5 +4,6 @@
 
 cat /var/run/sshd.pid
 
-#process ID
+#process ID, used to identify the sshd and is created at sshd startup time
+#SSHD = secure shell daemon application
 #src: https://www.ibm.com/docs/en/z-system-automation/4.1.0?topic=automation-example-sshd

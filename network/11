@@ -1,13 +1,8 @@
-#!/bin/bash/
+11:Use the output of the previous command to find the name and IP address
+of the device that makes the link between you (local network) and the
+outside world
 
-#11:Use the output of the previous command to find the name and IP address
-# of the device that makes the link between you (local network) and the
-# outside world
+nat = network address translation, and it allows multiple devices to access the
+internet through a single public address.
 
-nat (10.60.1.1)
-
-#nat = network address translation
-
-#column 1 = hop number (time to live value)
-#column 2 = host name an IP address of the responding system
-#column 3 - 5 = round-trip time for an attempt to reach destination + TTL values
+use nslookup 10.60.1.1 to find the ip address and name

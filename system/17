@@ -6,5 +6,3 @@
 ssh username@ipaddress
 
 #src https://wpguru.co.uk/2014/02/how-to-ssh-into-a-virtual-machine-in-parallels-desktop/
-
-#[port to connect to on the remote host]

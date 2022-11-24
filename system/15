@@ -1,9 +1,8 @@
 #!/bin/bash/
-
-sudo kill $pid
-
 #Find the command that kills the background command’s process
 
-#https://www.cyberciti.biz/faq/how-to-check-running-process-in-linux-using-command-line/
-
+sudo kill $pid
+#aternatively sudo kill -9 tail (-9 closes process with the name that follows)
 #$pid - process id number given when program is run. (can find with jobs -l)
+
+#https://www.cyberciti.biz/faq/how-to-check-running-process-in-linux-using-command-line/
