@@ -1,3 +1,5 @@
 #!/bin/bash/
 
 #Explain how connect yourself as new user. (With graphic session and ssh session)
+
+#log out of current session with current user, and login with new user details.
