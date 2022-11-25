@@ -5,4 +5,6 @@
 
 ssh username@ipaddress
 
+#find the ip address with command: ip a
+
 #src https://wpguru.co.uk/2014/02/how-to-ssh-into-a-virtual-machine-in-parallels-desktop/
