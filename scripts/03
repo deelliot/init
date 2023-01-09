@@ -14,22 +14,17 @@
 
 #Three’s a Charm. Write a script of you choice.
 
-# shell script to gitignore changes to line 9 in the 42 header file, in all *c and *h files.
+#script converts a hexadecimal colour code into rgb, and then into unit rgb
+#values. Very useful for graphics branch
 
+hexcode=$1
+hex_int=$((16#$hexcode))
+r=$(((hex_int >> 16) & 0xFF))
+g=$(((hex_int >> 8) & 0xFF))
+b=$(((hex_int) & 0xFF))
+echo "rgb: ($r, $g, $b)"
 
-#!/bin/bash
-#
-# This hook will look for code comments marked '//no-commit'
-#    - case-insensitive
-#    - dash is optional
-#    - there may be a space after the //
-#
-noCommitCount=$(git diff --no-ext-diff --cached | egrep -i --count "(@No|\/\/\s?no[ -]?)commit")
-if [ "$noCommitCount" -ne "0" ]; then
-   echo "WARNING: You are attempting to commit changes which include a 'no-commit'."
-   echo "Please check the following files:"
-   git diff --no-ext-diff --cached --name-only -i -G"(@no|\/\/s?no-?)commit" | sed 's/^/   - /'
-   echo
-   echo "You can ignore this warning by running the commit command with '--no-verify'"
-   exit 1
-fi
+r2=$(bc <<< "scale=3; ${r}/255")
+g2=$(bc <<< "scale=3; ${g}/255")
+b2=$(bc <<< "scale=3; ${b}/255")
+echo "unit rgb: ($r2, $g2, $b2)"
